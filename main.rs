@@ -4,7 +4,7 @@ use std::time::Duration;
 
 fn main() {
 
-    // GREETER
+    // GREETING HANDLER
     println!("Welcome to the rust calculator! (Made by Hasan M. Hasan </3)");
     thread::sleep(Duration::from_secs(2));
     
@@ -18,7 +18,7 @@ fn main() {
     let operation = operation.trim();
 
 
-    // CALCULATION PROCEDURER & ERROR HANDLER? (im stupid)
+    // CALCULATION PROCEDURER & ERROR HANDLER (this is just bloatware at this point lol)
     if operation == "+" {
         println!("You have chosen addition!");
         thread::sleep(Duration::from_secs(1));
@@ -75,7 +75,6 @@ fn main() {
         main();
     }
 }
-
 
 // OPERATOR FUNCTIONS
 fn addition(){
@@ -230,6 +229,5 @@ fn rerun(){
         println!("Please either enter (y) or (n)...");
         thread::sleep(Duration::from_secs(1));
         rerun();
-
     }
 }
